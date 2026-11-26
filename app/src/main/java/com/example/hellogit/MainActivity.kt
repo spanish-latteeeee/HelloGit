@@ -65,7 +65,7 @@ fun CounterScreen(modifier: Modifier = Modifier) {
                 onClick = { count = 0 },
                 enabled = count > 0
             ) {
-                Text(text = "Reset")
+                Text(text = "Reset Count")
             }
         }
     }
