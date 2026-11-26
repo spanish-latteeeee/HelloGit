@@ -60,8 +60,11 @@ fun CounterScreen(modifier: Modifier = Modifier) {
             Button(onClick = { count++ }) {
                 Text(text = "Increment")
             }
-            Spacer(modifier = Modifier.width(12.dp))
-            OutlinedButton(onClick = { count = 0 }) {
+            Spacer(modifier = Modifier.width(16.dp))
+            OutlinedButton(
+                onClick = { count = 0 },
+                enabled = count > 0
+            ) {
                 Text(text = "Reset")
             }
         }
